@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Enhancer</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .button {
+      padding: 10px;
+      margin-top: 10px;
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    #userInfo {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>YouTube Enhancer</h1>
+
+  <div id="userInfo">
+    <p id="userEmail">Not logged in</p>
+  </div>
+
+  <button id="authBtn" class="button">Login with Google</button>
+  <button id="logoutBtn" class="button" style="display: none;">Logout</button>
+  <button id="fetchBtn" class="button" style="display: none;">Fetch Liked Videos</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
